@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basavaraj Garampalli</title>
+    <style>
+        /* --- RESET & GLOBAL STYLES --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background-color: #111111; 
+            color: #ffffff; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px; /* UPDATED TO LOOK GREAT ON PC */
+            width: 100%;
+        }
+
+        /* --- HAMBURGER MENU --- */
+        .menu-btn {
+            background-color: #1f1f1f;
+            border: none;
+            border-radius: 12px;
+            padding: 12px 18px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            display: block;
+        }
+        .menu-line { display: block; width: 24px; height: 2px; background: #fff; margin: 4px 0; }
+
+        /* --- CARD STYLE --- */
+        .card {
+            background-color: #161616;
+            border-radius: 24px;
+            padding: 30px 24px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        /* --- TEXT ELEMENTS --- */
+        h1, h2 { font-weight: 700; letter-spacing: -0.5px; }
+        h1 { font-size: 34px; margin-bottom: 10px; }
+        h2 { font-size: 32px; margin-bottom: 20px; }
+        h3 { font-size: 24px; font-weight: 700; margin: 15px 0 5px 0; }
+        h4 { font-size: 18px; font-weight: 400; color: #b0b0b0; }
+
+        p { color: #d1d1d1; font-size: 16px; margin-bottom: 15px; }
+        .sub-text { color: #a0a0a0; }
+
+        /* --- IMAGES --- */
+        .img-container { width: 100%; margin: 20px 0; }
+        .rounded-img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+        }
+
+        /* --- PROFILE SECTION --- */
+        .profile-pic {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            border-radius: 16px;
+            margin: 15px 0;
+        }
+
+        /* --- LISTS --- */
+        ul { padding-left: 20px; margin: 15px 0; color: #d1d1d1; }
+        li { margin-bottom: 8px; }
+
+        /* --- BOTTOM BUTTON --- */
+        .down-arrow-btn {
+            background-color: #3a3a3a;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            margin: 30px auto 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .arrow { width: 18px; height: 18px; border: solid #fff; border-width: 0 2px 2px 0; transform: rotate(45deg); margin-top: -5px; }
+        
+        /* --- CONTACT SECTION --- */
+        .contact-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 5px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px 15px;
+            background-color: #1f1f1f;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #d1d1d1;
+            transition: background-color 0.3s ease;
+        }
+        .contact-item:hover {
+            background-color: #2a2a2a;
+        }
+        .contact-icon {
+            font-size: 20px;
+            width: 30px;
+            text-align: center;
+        }
+        .contact-text {
+            font-size: 15px;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HAMBURGER MENU -->
+    <button class="menu-btn">
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+    </button>
+
+    <!-- HERO CARD -->
+    <div class="card">
+        <h1>Hi, I'm Basavaraj</h1>
+        <p>a computer engineer who loves designing tech solutions that embrace creativity and innovation!</p>
+        <img src="profile.jpeg" alt="Basavaraj" class="profile-pic">
+    </div>
+
+    <!-- DOWN ARROW -->
+    <div style="display:flex; justify-content:center; margin-bottom:20px;">
+        <button class="down-arrow-btn"><div class="arrow"></div></button>
+    </div>
+
+    <!-- ABOUT ME -->
+    <div class="card">
+        <h2>about me.</h2>
+        <p>Welcome to my portfolio! I am happy you stopped by. Feel free to explore my projects, hobbies, and experience. I love working on products and solutions that positively impact the world. With a focus on embedded systems software engineering, I have a deep passion for transforming ideas into reality and it's the thrill of creation & thoughtful design that keeps me going. I'm currently open to job opportunities, projects, and any other great ideas that you have! Please reach out if you would like to further our conversation. Enjoy!</p>
+        
+        <p class="sub-text" style="margin-top: 20px;">Here are a few of my favorite places!</p>
+
+        <!-- COIMBATORE -->
+        <div class="img-container">
+            <img src="Coimbatore.jpg" alt="Coimbatore" class="rounded-img">
+        </div>
+        <h3>Coimbatore</h3>
+
+        <!-- SWITZERLAND -->
+        <div class="img-container">
+            <img src="Switzerland.jpg" alt="Switzerland" class="rounded-img">
+        </div>
+        <h3>Switzerland</h3>
+
+        <!-- BENGALURU -->
+        <div class="img-container">
+            <img src="Bengaluru.jpg" alt="Bengaluru" class="rounded-img">
+        </div>
+        <h3>Bengaluru</h3>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="card">
+        <h2>projects.</h2>
+        
+        <!-- PROJECT 1 -->
+        <h3>Cost Watch Dog</h3>
+        <h4>Internship Project - 2026</h4>
+        <ul>
+            <li>DevOps</li>
+            <li>AWS / Cloud Infrastructure</li>
+            <li>CI/CD Pipelines</li>
+            <li>Python / Bash Scripting</li>
+        </ul>
+
+        <!-- PROJECT 2 -->
+        <h3>Data Corruption Test Tool</h3>
+        <h4>OWC. Internship Project</h4>
+        <ul>
+            <li>C++</li>
+            <li>State-Machine Analysis</li>
+            <li>Bash / Scripting</li>
+            <li>Command Line Tool Dev</li>
+        </ul>
+
+        <!-- PROJECT 3 -->
+        <h3>Embedded System Dashboard</h3>
+        <h4>College Capstone Project</h4>
+        <ul>
+            <li>Embedded C</li>
+            <li>IoT Sensors</li>
+            <li>Real-time Data Monitoring</li>
+            <li>Python / Flask API</li>
+        </ul>
+    </div>
+
+    <!-- HOBBIES -->
+    <div class="card">
+        <h2>my hobbies.</h2>
+
+        <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?q=80&w=2073&auto=format&fit=crop" alt="Hiking" class="rounded-img">
+        </div>
+
+        <h3>Running, Backpacking</h3>
+        <p>Over the years I've done dozens of trips to my favorite locations like Yosemite, Sequoia National Forest, and Tahoe National Forest!</p>
+
+        <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=2070&auto=format&fit=crop" alt="Skiing" class="rounded-img">
+        </div>
+
+        <h3>Skiing</h3>
+        <p>Since I could walk I've developed a passion for winter sports. Skiing is my escape and you can find me up at Palisades Tahoe all the time!</p>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <div class="card">
+        <h2>contact.</h2>
+        <p>Feel free to reach out to me through any of the platforms below!</p>
+        
+        <div class="contact-grid">
+            <!-- Email -->
+            <a href="mailto:basavarajbosses@gmail.com" class="contact-item">
+                <span class="contact-icon">✉️</span>
+                <span class="contact-text">basavarajbosses@gmail.com</span>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/basavarajbosses-lang" target="_blank" class="contact-item">
+                <span class="contact-icon">🐙</span>
+                <span class="contact-text">github.com/basavarajbosses-lang</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/basavaraj-garampalli-4b36a827a" target="_blank" class="contact-item">
+                <span class="contact-icon">🔗</span>
+                <span class="contact-text">LinkedIn Profile</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- FOOTER BUTTON -->
+    <div style="display:flex; justify-content:center; margin: 30px 0 60px 0;">
+        <button class="down-arrow-btn"><div class="arrow"></div></button>
+    </div>
+
+</div>
+
+</body>
+</html>
